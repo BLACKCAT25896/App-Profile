@@ -47,7 +47,20 @@ class WelcomeVC: UIViewController {
         }
         
     }
-
+    
+    
+    
+    
+    
+    @IBAction func clearCalculatorBtnPressed(_ sender: Any) {
+        wageTxt.text = ""
+        priceTxt.text = ""
+        resultLbl.isHidden = true
+        hoursLbl.isHidden = true
+        view.endEditing(false)
+        
+    }
+    
 
 }
 

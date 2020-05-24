@@ -59,6 +59,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjx-PL-9y8">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="27"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculatorBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWA-4D-cz4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -68,11 +78,14 @@
                             <constraint firstItem="gP1-OB-pwV" firstAttribute="height" secondItem="vjA-FZ-XuX" secondAttribute="height" id="FFN-y8-h9s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gP1-OB-pwV" secondAttribute="trailing" constant="20" id="Fmc-Ht-6WJ"/>
                             <constraint firstItem="u78-50-Fjs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="FrD-fu-sje"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gjx-PL-9y8" secondAttribute="bottom" id="Hfb-qY-u70"/>
                             <constraint firstItem="u78-50-Fjs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lb8-gO-PQy"/>
                             <constraint firstItem="MPG-bq-i8L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LjR-9d-fgM"/>
                             <constraint firstItem="gP1-OB-pwV" firstAttribute="top" secondItem="vjA-FZ-XuX" secondAttribute="bottom" constant="20" id="PrD-6i-J8E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gjx-PL-9y8" secondAttribute="trailing" id="QZV-Ok-tuM"/>
                             <constraint firstItem="gP1-OB-pwV" firstAttribute="trailing" secondItem="vjA-FZ-XuX" secondAttribute="trailing" id="Sm3-cr-2xN"/>
                             <constraint firstItem="byv-S1-M17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zg3-Zw-cmd"/>
+                            <constraint firstItem="Gjx-PL-9y8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="css-kU-Sih"/>
                             <constraint firstItem="byv-S1-M17" firstAttribute="top" secondItem="MPG-bq-i8L" secondAttribute="bottom" constant="5" id="eO5-fS-lxR"/>
                             <constraint firstItem="MPG-bq-i8L" firstAttribute="top" secondItem="gP1-OB-pwV" secondAttribute="bottom" constant="20" id="gPE-y9-beR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vjA-FZ-XuX" secondAttribute="trailing" constant="20" id="oAa-gL-0bS"/>

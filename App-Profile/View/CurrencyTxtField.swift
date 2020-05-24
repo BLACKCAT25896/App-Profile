@@ -10,6 +10,11 @@ import UIKit
 @IBDesignable
 class CurrencyTxtField: UITextField {
     
+  
+    
+    
+    
+    
     override func prepareForInterfaceBuilder() {
        customizeView()
     }
