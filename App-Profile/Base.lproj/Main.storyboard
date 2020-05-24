@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="App_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Hourly Wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vjA-FZ-XuX" customClass="CurrencyTxtField" customModule="App_Profile" customModuleProvider="target">
+                                <rect key="frame" x="20" y="170" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mw8-tp-9g3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="u78-50-Fjs">
+                                <rect key="frame" x="137.5" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3aG-ak-jf5"/>
+                                    <constraint firstAttribute="height" constant="100" id="Ouv-y8-ieD"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gP1-OB-pwV" customClass="CurrencyTxtField" customModule="App_Profile" customModuleProvider="target">
+                                <rect key="frame" x="20" y="240" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GoP-lS-pzT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="cGH-lv-ZFb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPG-bq-i8L">
+                                <rect key="frame" x="157.5" y="310" width="60" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="BqM-zH-EpO"/>
+                                    <constraint firstAttribute="width" constant="60" id="dTH-0H-NHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byv-S1-M17">
+                                <rect key="frame" x="158" y="385" width="60" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="QRy-Gc-NNn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="W3G-Iq-x49"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gP1-OB-pwV" firstAttribute="leading" secondItem="vjA-FZ-XuX" secondAttribute="leading" id="8Lg-l2-i7L"/>
+                            <constraint firstItem="vjA-FZ-XuX" firstAttribute="top" secondItem="u78-50-Fjs" secondAttribute="bottom" constant="50" id="Bvg-Pb-1ef"/>
+                            <constraint firstItem="gP1-OB-pwV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CCS-JZ-Rel"/>
+                            <constraint firstItem="gP1-OB-pwV" firstAttribute="height" secondItem="vjA-FZ-XuX" secondAttribute="height" id="FFN-y8-h9s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gP1-OB-pwV" secondAttribute="trailing" constant="20" id="Fmc-Ht-6WJ"/>
+                            <constraint firstItem="u78-50-Fjs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="FrD-fu-sje"/>
+                            <constraint firstItem="u78-50-Fjs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lb8-gO-PQy"/>
+                            <constraint firstItem="MPG-bq-i8L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LjR-9d-fgM"/>
+                            <constraint firstItem="gP1-OB-pwV" firstAttribute="top" secondItem="vjA-FZ-XuX" secondAttribute="bottom" constant="20" id="PrD-6i-J8E"/>
+                            <constraint firstItem="gP1-OB-pwV" firstAttribute="trailing" secondItem="vjA-FZ-XuX" secondAttribute="trailing" id="Sm3-cr-2xN"/>
+                            <constraint firstItem="byv-S1-M17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zg3-Zw-cmd"/>
+                            <constraint firstItem="byv-S1-M17" firstAttribute="top" secondItem="MPG-bq-i8L" secondAttribute="bottom" constant="5" id="eO5-fS-lxR"/>
+                            <constraint firstItem="MPG-bq-i8L" firstAttribute="top" secondItem="gP1-OB-pwV" secondAttribute="bottom" constant="20" id="gPE-y9-beR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vjA-FZ-XuX" secondAttribute="trailing" constant="20" id="oAa-gL-0bS"/>
+                            <constraint firstItem="vjA-FZ-XuX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pT7-AX-B2y"/>
+                            <constraint firstItem="vjA-FZ-XuX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tv9-zb-wOa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hoursLbl" destination="byv-S1-M17" id="P0h-4m-hAV"/>
+                        <outlet property="priceTxt" destination="gP1-OB-pwV" id="8lu-Gq-pTy"/>
+                        <outlet property="resultLbl" destination="MPG-bq-i8L" id="ChO-Ad-vqS"/>
+                        <outlet property="wageTxt" destination="vjA-FZ-XuX" id="cRg-5v-KN3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="windowShopperIcon" width="115" height="115"/>
+    </resources>
+</document>
